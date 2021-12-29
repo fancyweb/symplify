@@ -68,7 +68,7 @@ CODE_SAMPLE
      */
     public function process(Node $node, Scope $scope): array
     {
-        // allow in test case methods, possibly to compare reults
+        // allow in test case methods, possibly to compare results
         if ($this->testAnalyzer->isTestClassMethod($scope, $node)) {
             return [];
         }

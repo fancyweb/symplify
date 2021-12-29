@@ -14,7 +14,7 @@ final class AttributeKey
     public const PARENT = 'parent';
 
     /**
-     * Used in php-paser, do not change
+     * Used in php-parser, do not change
      *
      * @var string
      */

@@ -115,7 +115,7 @@ CODE_SAMPLE
 
     private function shouldSkip(string $relativeDirPath, Concat $concat, Scope $scope): bool
     {
-        // is vendor autolaod? it yet to be exist
+        // is vendor autoload? it yet to be exist
         if (Strings::match($relativeDirPath, self::VENDOR_REGEX)) {
             return true;
         }

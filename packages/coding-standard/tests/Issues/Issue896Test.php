@@ -28,6 +28,6 @@ final class Issue896Test extends AbstractCheckerTestCase
 
     public function provideConfig(): string
     {
-        return __DIR__ . '/config/line_lenght_rule.php';
+        return __DIR__ . '/config/line_length_rule.php';
     }
 }

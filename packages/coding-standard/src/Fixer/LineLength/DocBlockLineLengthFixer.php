@@ -34,7 +34,7 @@ final class DocBlockLineLengthFixer extends AbstractSymplifyFixer implements Con
     /**
      * @var string
      */
-    private const ERROR_MESSAGE = 'Docblock lenght should fit expected width';
+    private const ERROR_MESSAGE = 'Docblock length should fit expected width';
 
     /**
      * @see https://regex101.com/r/DNWfB6/1
@@ -50,9 +50,9 @@ final class DocBlockLineLengthFixer extends AbstractSymplifyFixer implements Con
     /**
      * @var int
      */
-    private const DEFAULT_LINE_LENGHT = 120;
+    private const DEFAULT_LINE_LENGTH = 120;
 
-    private int $lineLength = self::DEFAULT_LINE_LENGHT;
+    private int $lineLength = self::DEFAULT_LINE_LENGTH;
 
     public function __construct(
         private DocBlockLinesFactory $docBlockLinesFactory
@@ -127,7 +127,7 @@ final class DocBlockLineLengthFixer extends AbstractSymplifyFixer implements Con
      */
     public function configure(array $configuration): void
     {
-        $this->lineLength = $configuration[self::LINE_LENGTH] ?? self::DEFAULT_LINE_LENGHT;
+        $this->lineLength = $configuration[self::LINE_LENGTH] ?? self::DEFAULT_LINE_LENGTH;
     }
 
     public function getRuleDefinition(): RuleDefinition

@@ -10,7 +10,7 @@ use Nette\Utils\Strings;
 use Symplify\GitWrapper\ValueObject\Regex;
 
 /**
- * Class that parses and returnes an array of Tags.
+ * Class that parses and returns an array of Tags.
  *
  * @implements IteratorAggregate<int, string>
  */

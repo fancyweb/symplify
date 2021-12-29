@@ -10,7 +10,7 @@ namespace Symplify\EasyTesting\PHPUnit;
 final class StaticPHPUnitEnvironment
 {
     /**
-     * Never ever used static methods if not neccesary, this is just handy for tests + src to prevent duplication.
+     * Never ever used static methods if not necessary, this is just handy for tests + src to prevent duplication.
      */
     public static function isPHPUnitRun(): bool
     {

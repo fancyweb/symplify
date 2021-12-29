@@ -41,7 +41,7 @@ final class SwitchedTypeAndNameMalformWorker implements MalformWorkerInterface
                 continue;
             }
 
-            // skip random words that look like type without autolaoding
+            // skip random words that look like type without autoloading
             if (in_array($match['type'], ['The', 'Set'], true)) {
                 continue;
             }

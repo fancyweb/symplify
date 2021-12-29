@@ -201,7 +201,7 @@ final class PhpDocNodeTraverser
                 }
             }
 
-            // should traverse node childrens properties?
+            // should traverse node children properties?
             if ($traverseChildren) {
                 $node = $this->traverseNode($node);
                 if ($this->stopTraversal) {

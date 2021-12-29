@@ -45,7 +45,7 @@ Strict type declaration has to be followed by empty line
 
 ## DocBlockLineLengthFixer
 
-Docblock lenght should fit expected width
+Docblock length should fit expected width
 
 :wrench: **configure it!**
 

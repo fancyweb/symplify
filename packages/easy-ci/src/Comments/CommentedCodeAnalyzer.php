@@ -27,7 +27,7 @@ final class CommentedCodeAnalyzer
             if ($isCommentLine) {
                 ++$commentLinesCount;
             } else {
-                // crossed the treshold?
+                // crossed the threshold?
                 if ($commentLinesCount >= $commentedLinesCountLimit) {
                     $commentedLines[] = $key;
                 }

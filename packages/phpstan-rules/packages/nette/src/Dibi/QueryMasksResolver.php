@@ -12,7 +12,7 @@ use PHPStan\Analyser\Scope;
 use Symplify\Astral\NodeValue\NodeValueResolver;
 
 /**
- * E.g. from "INSERT %s %v" Will extact: s, v
+ * E.g. from "INSERT %s %v" Will extract: s, v
  */
 final class QueryMasksResolver
 {

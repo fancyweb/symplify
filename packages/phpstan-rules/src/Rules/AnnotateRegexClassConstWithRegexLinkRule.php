@@ -62,7 +62,7 @@ final class AnnotateRegexClassConstWithRegexLinkRule extends AbstractSymplifyRul
             return [];
         }
 
-        // is regex patern
+        // is regex pattern
         if ($this->hasDocBlockWithRegexLink($node)) {
             return [];
         }

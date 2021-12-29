@@ -48,7 +48,7 @@ final class MissingClassesLatteAnalyzer implements LatteTemplateAnalyzerInterfac
         $errors = [];
 
         foreach ($fileInfos as $fileInfo) {
-            // clear content from javascript fiels
+            // clear content from javascript fields
             $fileContents = Strings::replace($fileInfo->getContents(), self::SCRIPT_CONTENTS_REGEX, '');
             $classMatches = Strings::matchAll($fileContents, self::CLASS_REGEX);
 

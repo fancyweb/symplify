@@ -23,7 +23,7 @@ final class MethodNodeAnalyser
             return null;
         }
 
-        // the classes have highter priority, e.g. priority in class covariance
+        // the classes have higher priority, e.g. priority in class covariance
         foreach ($classReflection->getParents() as $parentClassReflection) {
             if ($parentClassReflection->hasNativeMethod($methodName)) {
                 return $parentClassReflection->getNativeMethod($methodName);

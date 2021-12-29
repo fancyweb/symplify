@@ -61,7 +61,7 @@ return [
                 return $content;
             }
 
-            // remove alias to class have origina PHP names - fix in
+            // remove alias to class have original PHP names - fix in
             $content = Strings::replace($content, '#\\\\class_alias(.*?);#', '');
 
             return Strings::replace($content, '#namespace ' . $prefix . ';#', '');

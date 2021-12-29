@@ -55,9 +55,9 @@ final class LineLengthFixer extends AbstractSymplifyFixer implements Configurabl
     /**
      * @var int
      */
-    private const DEFAULT_LINE_LENGHT = 120;
+    private const DEFAULT_LINE_LENGTH = 120;
 
-    private int $lineLength = self::DEFAULT_LINE_LENGHT;
+    private int $lineLength = self::DEFAULT_LINE_LENGTH;
 
     private bool $breakLongLines = true;
 
@@ -177,7 +177,7 @@ CODE_SAMPLE
 
     public function configure(array $configuration): void
     {
-        $this->lineLength = $configuration[self::LINE_LENGTH] ?? self::DEFAULT_LINE_LENGHT;
+        $this->lineLength = $configuration[self::LINE_LENGTH] ?? self::DEFAULT_LINE_LENGTH;
         $this->breakLongLines = $configuration[self::BREAK_LONG_LINES] ?? true;
         $this->inlineShortLines = $configuration[self::INLINE_SHORT_LINES] ?? true;
     }

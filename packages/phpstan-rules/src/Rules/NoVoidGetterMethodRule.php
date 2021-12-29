@@ -106,7 +106,7 @@ CODE_SAMPLE
         return ! $this->simpleNodeFinder->hasByTypes($classMethod, [
             Return_::class,
             Yield_::class,
-            // possibly unneded contract override
+            // possibly unneeded contract override
             Throw_::class,
             Node\Stmt\Throw_::class,
         ]);

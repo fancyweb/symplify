@@ -38,7 +38,7 @@ final class GitProcess extends Process
         $cwd = $this->resolveWorkingDirectory($cwd, $gitCommand);
 
         // Finalize the environment variables, an empty array is converted
-        // to null which enherits the environment of the PHP process.
+        // to null which inherits the environment of the PHP process.
         $env = $gitWrapper->getEnvVars();
         if ($env === []) {
             $env = null;

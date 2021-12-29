@@ -164,7 +164,7 @@ CODE_SAMPLE
             return null;
         }
 
-        // not solveable yet, work with PHP 8 code only
+        // not solvable yet, work with PHP 8 code only
         if ($argType instanceof UnionType) {
             return null;
         }
@@ -178,7 +178,7 @@ CODE_SAMPLE
             return null;
         }
 
-        // handle weird type substration cases
+        // handle weird type subtraction cases
         $paramTypeAsString = $objectType->describe(VerbosityLevel::typeOnly());
         $argTypeAsString = $argType->describe(VerbosityLevel::typeOnly());
 

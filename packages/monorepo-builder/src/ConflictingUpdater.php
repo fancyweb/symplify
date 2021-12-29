@@ -41,7 +41,7 @@ final class ConflictingUpdater
                     continue;
                 }
 
-                // skip rqeuired package names, conflict included there implicitly
+                // skip required package names, conflict included there implicitly
                 if (in_array($packageName, $requiredPackagesNames, true)) {
                     continue;
                 }

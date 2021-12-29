@@ -175,7 +175,7 @@ final class GitCommand
                 $prefix = strlen($option) !== 1 ? '--' : '-';
                 $options[] = $prefix . $option;
 
-                // Render apend the value if the option isn't a flag.
+                // Render append the value if the option isn't a flag.
                 if ($value !== true) {
                     $options[] = $value;
                 }

@@ -122,7 +122,7 @@ CODE_SAMPLE
             return true;
         }
 
-        // instancef of but with static reflection
+        // instanceof of but with static reflection
         $classObjectType = new ObjectType($className);
         foreach ($allowedTypes as $allowedType) {
             if ($classObjectType->isInstanceOf($allowedType)->yes()) {
